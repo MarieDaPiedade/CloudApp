@@ -1,0 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+$primaryColor : #613DC1;
+$secondaryDarkColor : #5C5C5C;
+$secondaryMediumColor : #A8A8A8;
+$background-color : #fafafd;
+
+$primary-font-family : 'Poppins', sans-serif;
+$secondary-font-family : 'Heebo', sans-serif;
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+    font-family: $primary-font-family;
+}
+* {
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+
+.bold {
+    font-weight: bold;
+}
+%p {
+    font-family: $secondary-font-family;
+    color: $secondaryMediumColor;
+    font-size: 1.4rem;
+}
+p {
+    @extend %p;
+}
+@mixin margin {
+    margin: 0 10%;
+}
+@mixin colors {
+    color: white;
+    background-color: $primaryColor;
+    font-weight: bold;
+}
+
+
+/***** HEADER *****/
+/*****************/
+
+header {
+    background-color: $background-color;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+    min-height: 90vh;
+    nav {
+        display: flex;
+        align-items: center;
+        ul {
+            list-style: none;
+            li {
+                a {
+                    font-family: $primary-font-family;
+                    text-decoration: none;
+                    color : $secondaryMediumColor;
+                }              
+            }
+        }
+    }
+}
+h1 {
+    font-family: $primary-font-family;
+    color : $primaryColor;
+    width: 20%;
+    margin-left: 40px;
+    span {
+        font-weight: normal;
+    }
+}
+.login {
+    color: $primaryColor;
+}
+.liste1 {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+.liste2 {
+    display: flex;
+    width: 30%;
+    justify-content: end;
+    margin-right: 40px;
+    li {
+        margin-left: 20%;
+    }
+}
+h2 {
+    font-size: 4rem;
+    color: $primaryColor;
+    margin: 0;
+    span {
+        color: $secondaryDarkColor
+    }
+}
+.container {
+    @include margin;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-self: center;
+}
+.home {
+    width: 50%;
+}
+button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+.button1 {
+    padding: 10px 20px;
+    @include colors;
+    filter: drop-shadow(3px 3px 4px $secondaryMediumColor);
+}
+.button2 {
+    padding: 8px 20px;
+    color: $primaryColor;
+    border: 2px solid $primaryColor;
+    background-color: white;
+}
+.img1 {
+    margin-top: 50px;
+    width: 40%;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+/*****ABOUT US*****/
+/*****************/
+
+h3 {
+    color: $primaryColor;
+    font-weight: lighter;
+}
+h4 {
+    color: $secondaryDarkColor;
+    font-size: 160%;
+    margin-top: 0;
+}
+.about-title {
+    text-align: center;
+}
