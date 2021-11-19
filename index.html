@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cloud App</title>
     <link rel="stylesheet" href="design/css/default.css">
+    <script src="./script/script.js" defer></script>
 </head>
 <body>
     <div id="wrapper">
@@ -16,13 +17,13 @@
             <h1>Cloud <span>App</span></h1>
             <ul class="liste1">
                 <li class="bold"><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Pricing</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#section-about">About</a></li>
+                <li><a href="#section-services">Services</a></li>
+                <li><a href="#section-princing">Pricing</a></li>
+                <li><a href="#section-contact">Contact</a></li>
             </ul>
             <ul class="liste2">
-                <li><a href="">Sign up</a></li>
+                <li class="color"><a href="">Sign up</a></li>
                 <li><a class="login" href="">Login</a></li>
             </ul>
         </nav>
@@ -44,65 +45,191 @@
     </header>
 
     <main>
-        <section>
+        <!-- About -->
+        <section id="section-about">
             <div class="about-title">
                 <h3>ABOUT US</h3>
                 <h4>We lead and support our <br/>customer's cloud</h4>
             </div>
 
-            <div>
-                <div>
-                    <div>
-                        <img src="/Images/Brain icon.svg" alt="brain">
+            <div class="container2">
+                    <div class="brain">
+                        <img src="/Images/Brain-icon.svg" alt="brain">
                         <h5>Data with analytics</h5>
+                        <img src="/Images/Barre.svg" alt="barre">
                         <p>Lorem ipsum dolor sit amet, <br/>consectetur  adipiscing elit. 
                         Non <br/>interdum netus neque, eleifend <br/>purus, amet, iaculis.</p>
                     </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="/Images/Idea icon.svg" alt="idea">
+                    <div class="idea">
+                        <img src="/Images/Idea-icon.svg" alt="idea">
                         <h5>Deploy in seconds</h5>
+                        <img src="/Images/Barre.svg" alt="barre">
                         <p>Lorem ipsum dolor sit amet, <br/>consectetur  adipiscing elit. 
                             Non <br/>interdum netus neque, eleifend <br/>purus, amet, iaculis.</p>
                     </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="/Images/Rocket icon.svg" alt="rocket">
+                    <div class="rocket">
+                        <img src="/Images/Rocket-icon.svg" alt="rocket">
                         <h5>Flexible performance</h5>
+                        <img src="/Images/Barre.svg" alt="barre">
                         <p>Lorem ipsum dolor sit amet, <br/>consectetur  adipiscing elit. 
                             Non <br/>interdum netus neque, eleifend <br/>purus, amet, iaculis.</p>
                     </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="/Images/Megaphone icon.svg" alt="megaphone">
+                    <div class="megaphone">
+                        <img src="/Images/Megaphone-icon.svg" alt="megaphone">
                         <h5>Update automatically</h5>
+                        <img src="/Images/Barre.svg" alt="barre">
                         <p>Lorem ipsum dolor sit amet, <br/>consectetur  adipiscing elit. 
                             Non <br/>interdum netus neque, eleifend <br/>purus, amet, iaculis.</p>
                     </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="/Images/Wrench icon.svg" alt="wrench">
+                    <div class="wrench">
+                        <img src="/Images/Wrench-icon.svg" alt="wrench">
                         <h5>Protect Data Cloud</h5>
+                        <img src="/Images/Barre.svg" alt="barre">
                         <p>Lorem ipsum dolor sit amet, <br/>consectetur  adipiscing elit. 
                             Non <br/>interdum netus neque, eleifend <br/>purus, amet, iaculis.</p>
                     </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="/Images/Globe icon.svg" alt="globe">
+                    <div class="globe">
+                        <img src="/Images/Globe-icon.svg" alt="globe">
                         <h5>Open source compatibility</h5>
+                        <img src="/Images/Barre.svg" alt="barre">
                         <p>Lorem ipsum dolor sit amet, <br/>consectetur  adipiscing elit. 
                             Non <br/>interdum netus neque, eleifend <br/>purus, amet, iaculis.</p>
+                    </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section id="section-services">
+            <div class="container3">
+            <div class="services animeToi slideLeft">
+                <h3>OUR SERVICES</h3>
+                <h4>Best Service for the <br/> Technological Era</h4>
+                <div>
+                    <p class="sous-titre-service">Graphic Designer</p>
+                    <p class="p">Lorem ipsum dolor sit amet, consectetur <br/>
+                        adipiscing elit. Enim nec molestie ut quis <br/>
+                        euismod.</p>
+                </div>
+                <div>
+                    <p class="sous-titre-service">Software Development</p>
+                    <p class="p">Lorem ipsum dolor sit amet, consectetur <br/>
+                        adipiscing elit. Enim nec molestie ut quis <br/>
+                        euismod.</p>
+                </div>
+            </div>
+            <div class="img-service"><img src="/Images/img-services.jpg" alt="Service"></div>
+        </div>
+        </section>
+
+        <!-- Princing -->
+        <section id="section-princing">
+            <div class="princing-title">
+                <h3>PRINCING TABLE</h3>
+                <h4>Choose your formula <br/>according to your needs</h4>
+            </div>
+
+            <div class="princing-table">
+                <div class="total-left">
+                    <div class="table-left">
+                        <p class="title-table">STANDARD</p>
+                        <p class="price">$ 10 </p>
+                        <p class="month">PER MONTH</p>
+                        <ul class="list list-table">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Consectetur adipiscing elit</li>
+                            <li>Pharetra morbi sapien fermentum</li>
+                            <li>Ullamcorper porttitor fringilla</li>
+                            <li>Mattis eget vitae</li>
+                        </ul>
+                </div>
+                <div class="sign-up sign-up1">
+                    <p class="p-sign-up">SIGN UP</p>
+                </div>
+                </div>
+                
+                <div class="total-middle">
+                    <div class="table-middle">
+                        <p class="premium">PREMIUM</p>
+                        <p class="price-premium">$ 30 </p>
+                        <p class="month-premium">PER MONTH</p>
+                        <ul class="list list-premium">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Consectetur adipiscing elit</li>
+                            <li>Pharetra morbi sapien fermentum</li>
+                            <li>Ullamcorper porttitor fringilla</li>
+                            <li>Mattis eget vitae</li>
+                        </ul>
+                    </div>
+                    <div class="sign-up sign-up2">
+                        <p class="p-sign-up2">SIGN UP</p>
+                    </div>
+                </div>
+                <div class="total-right">
+                    <div class="table-right">
+                        <p class="title-table">BUSINESS</p>
+                        <p class="price">$ 20 </p>
+                        <p class="month">PER MONTH</p>
+                        <ul class="list list-business list-table">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Consectetur adipiscing elit</li>
+                            <li>Pharetra morbi sapien fermentum</li>
+                            <li>Ullamcorper porttitor fringilla</li>
+                            <li>Mattis eget vitae</li>
+                        </ul>
+                    </div>
+                    <div class="sign-up sign-up1">
+                        <p class="p-sign-up">SIGN UP</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Contact -->
+        <section id="section-contact">
+            <div class="contact-bloc">
+                <p class="titre-contact">Let's talk about your project</p>
+                <p class="sous-titre-contact">Nothing better than an oral exchange to talk about a project and start estimating your project</p>
+                <div class="form">
+                    <p class="nom">Nom *</p>
+                    <p class="tel">Téléphone *</p>
+                    <button class="envoyer">Envoyer</button>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <footer>
+        <div class="container1">
+            <div class="footer-part1">
+                <div class="footer-left">
+                    <h1 class="h1bis">Cloud <span>App</span></h1>
+                    <div class="icone-reseaux">
+                        <img class="img-footer" src="./Images/twitter.svg" alt="Twitter">
+                        <img class="img-footer" src="./Images/Facebook.svg" alt="Facebook">
+                        <img class="img-footer" src="./Images/linkedin.svg" alt="Linked In">
+                    </div>
+                </div>
+                    <div class="contact-us">
+                        <p class="titre-contact">Contact us</p>
+                        <p class="detail-contact">contact@cloudapp.com <br/>
+                        05 67 10 25 14</p>
+                    </div>
+                    <div class="find-us">
+                        <p class="titre-find">Find us</p>
+                        <p class="detail-adress">31 Allée Jules YYY <br/>
+                        31000 TOULOUSE <br/>
+                        FRANCE</p>
+                    </div>
+            </div>
+            <div class="footer-part2">
+                <p class="p-footer">Mentions légales</p>
+                <p class="p-footer">Données personnelles</p>
+                <p class="p-footer">Cookies</p>
+                <p class="p-footer"> - © CloudApp 2021  </p>
+            </div>
+        </div>
+    </footer>
 </div>
 </body>
 </html>
